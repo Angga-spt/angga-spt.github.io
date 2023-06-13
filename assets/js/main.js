@@ -88,7 +88,7 @@ $('#buttonclik').click(function () {
   if ((username === '' || email === '' || message === '')) return $('#username, #email, #phone, #messageval').attr('required', true);
 
   // console.log(message);
-  var mailtoLink = 'mailto:' + 'angga.saputra27@hotmail.com' + '?subject=' + encodeURIComponent('Message to angga') + '&body=' + encodeURIComponent(username + ': ' + email + ': ' + phone + ': ' + +message);
+  var mailtoLink = 'mailto:' + 'angga.saputra27@hotmail.com' + '?subject=' + encodeURIComponent('Message to angga') + '&body=' + encodeURIComponent(username + ': ' + email + ': ' + phone + ': ' + message);
   window.location.href = mailtoLink;
   $('#username').val('');
   $('#email').val('');
